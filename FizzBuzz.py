@@ -8,7 +8,7 @@ def fizzbuzz(num: int) -> str:
     else:
       return str(num)
     
-def fizz_buzz_results() -> list: 
-  return [fizzbuzz(i) for i in range(1,101)]
+def fizz_buzz_results(start: int, end: int) -> list: 
+  return [fizzbuzz(i) for i in range(start, end + 1)]
 
-print("\n".join(fizz_buzz_results()))
+print("\n".join(fizz_buzz_results(1, 100)))
