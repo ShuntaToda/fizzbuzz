@@ -12,5 +12,5 @@ def test_fizz_buzz():
 def test_fizz_buzz_num():
   assert "1" == fizzbuzz(1)
 
-def test_fizz_buzz_array_num():
-  assert 100 == len(fizz_buzz_results())
+def test_fizz_buzz_list_length():
+  assert 100 == len(fizz_buzz_results(1,100))
